@@ -3,7 +3,6 @@ import 'package:hotel_room_booking_app/app/routes/app_route_information_parser.d
 import 'package:hotel_room_booking_app/app/routes/app_routes_delegate.dart';
 import 'package:hotel_room_booking_app/core/theme/app_theme.dart';
 
-
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
@@ -25,12 +24,11 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: 'Navigator 2.0 App',
+      title: 'Hotel Room Booking App',
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.lightTheme, 
+      theme: AppTheme.lightTheme,
       routerDelegate: _routerDelegate,
       routeInformationParser: _routeInformationParser,
     );
   }
 }
-
